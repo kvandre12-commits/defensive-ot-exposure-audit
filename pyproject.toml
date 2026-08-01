@@ -33,6 +33,19 @@ ot-defense-audit = "ot_defense.cli:main"
 [project.optional-dependencies]
 dev = ["pytest>=8.0", "ruff>=0.5"]
 
+[tool.hatch.build.targets.wheel]
+packages = ["ot_defense"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "ot_defense",
+  "tests",
+  "examples",
+  "README.md",
+  "SECURITY.md",
+  "LICENSE",
+]
+
 [tool.ruff]
 line-length = 88
 target-version = "py311"
