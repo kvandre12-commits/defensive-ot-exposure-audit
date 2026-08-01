@@ -1,0 +1,3 @@
+# Example only. Replace with IPs/CIDRs you own/administer or are authorized to assess.
+192.0.2.10
+192.0.2.0/29
